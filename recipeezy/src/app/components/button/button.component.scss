@@ -1,0 +1,30 @@
+@import 'src/assets/scss/variable.scss';
+
+.btn {
+   // @include flexCenter;
+    @include ButtonText;
+    border: none;
+    padding: 0.6rem 1rem 0.5rem;
+    border-radius: 50px;
+    margin: 0.25rem;
+    cursor: pointer;
+    &-primary {
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+    &-secondary {
+        background-color: $color-primary;
+        color: $color-secondary;
+    }
+    &-tertiary {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+

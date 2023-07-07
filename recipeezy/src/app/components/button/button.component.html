@@ -1,0 +1,9 @@
+<button class="btn btn-{{emphasis}} {{iconOnly ? 'btn-icon-only' : ''}}"
+        [ngClass]="icon.length > 0 ? 'withIcon' : '' "
+        [disabled]="disabled"
+        [type]="type"
+        attr.aria-label="{{this.buttonText}}"
+        (click)="onButtonClick.emit($event)
+        "> 
+    {{buttonText}}
+</button>
